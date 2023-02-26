@@ -46,8 +46,9 @@ namespace AspClaimsApp
                 var identity = principal.Identity;
                 if (identity is not null && identity.IsAuthenticated)
                     return $"User indentity. Type: {identity.AuthenticationType}";
-                else
-                    return $"User not identity";
+                //else
+                //return $"User not identity";
+                
             });
 
             app.Run();
